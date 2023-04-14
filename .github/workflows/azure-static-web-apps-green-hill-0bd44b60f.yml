@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile --network-timeout 100000
       - name: Build with craco
         run: yarn build
       - name: Build And Deploy
