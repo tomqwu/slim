@@ -34,7 +34,7 @@ jobs:
           app_location: "/" # App source code path
           #skip_app_build: true
           app_build_command: "yarn install --frozen-lockfile --network-timeout 100000 && PUBLIC_URL=/ yarn build"
-          # api_location: "" # Api source code path - optional
+          # api_location: "" # Api source code path - optionaltgitht
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 

@@ -5,7 +5,8 @@ window.config = {
     {
       id: 'local',
       // This must match the proxy location configured for the web server
-      url: 'http://localhost:8008/dcm4chee-arc/aets/DCM4CHEE/rs',
+      //url: 'http://localhost:8008/dcm4chee-arc/aets/DCM4CHEE/rs',
+      url: 'https://sphdicomviewerws-sph-dicom-service.dicom.azurehealthcareapis.com',
       write: true
     }
   ],
