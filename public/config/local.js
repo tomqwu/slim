@@ -10,13 +10,13 @@ window.config = {
       write: true
     }
   ],
-  oidc: {
-    authority: "https://login.microsoftonline.com",
-    clientId: "96beb278-dd40-481b-8f74-adca6a671d7a",
-    //scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
-    grantType: "implicit",
-    //endSessionEndpoint: "https://www.google.com/accounts/Logout"
-  },
+  // oidc: {
+  //   authority: "https://login.microsoftonline.com",
+  //   clientId: "96beb278-dd40-481b-8f74-adca6a671d7a",
+  //   //scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
+  //   grantType: "implicit",
+  //   //endSessionEndpoint: "https://www.google.com/accounts/Logout"
+  // },
   disableWorklist: false,
   disableAnnotationTools: false,
   mode: 'light',
