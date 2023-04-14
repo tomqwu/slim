@@ -6,10 +6,17 @@ window.config = {
       id: 'local',
       // This must match the proxy location configured for the web server
       //url: 'http://localhost:8008/dcm4chee-arc/aets/DCM4CHEE/rs',
-      url: 'https://sphdicomviewerws-sph-dicom-service.dicom.azurehealthcareapis.com',
+      url: 'https://sphdicomviewerws-sph-dicom-service.dicom.azurehealthcareapis.com/v1/changefeed/latest',
       write: true
     }
   ],
+  oidc: {
+    authority: "https://login.microsoftonline.com",
+    clientId: "96beb278-dd40-481b-8f74-adca6a671d7a",
+    //scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
+    grantType: "implicit",
+    //endSessionEndpoint: "https://www.google.com/accounts/Logout"
+  },
   disableWorklist: false,
   disableAnnotationTools: false,
   mode: 'light',

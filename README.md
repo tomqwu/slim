@@ -171,7 +171,7 @@ window.config = {
   path: "/",
   servers: [
     {
-      id: "gcp",
+      id: "azure",
       url: `https://healthcare.googleapis.com/v1/projects/${gcpProject}/locations/${gcpLocation}/datasets/${gcpDataset}/dicomStores/${gcpStore}/dicomWeb`,
       write: true
     }
