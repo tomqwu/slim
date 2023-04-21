@@ -5,18 +5,18 @@ window.config = {
     {
       id: 'local',
       // This must match the proxy location configured for the web server
-      //url: 'http://localhost:8008/dcm4chee-arc/aets/DCM4CHEE/rs',
-      url: 'https://sphdicomviewerws-sph-dicom-service.dicom.azurehealthcareapis.com/v1',
+      url: 'https://dicomhamamatsu-dicomhamamatsu.dicom.azurehealthcareapis.com/v1',
       write: true
     }
   ],
-  // oidc: {
-  //   authority: "https://login.microsoftonline.com",
-  //   clientId: "96beb278-dd40-481b-8f74-adca6a671d7a",
-  //   //scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
-  //   grantType: "implicit",
-  //   //endSessionEndpoint: "https://www.google.com/accounts/Logout"
-  // },
+  oidc: {
+    authority: 'https://login.microsoftonline.com/a5de7a2a-ec54-4ee0-a5fe-0af64bd18f36/v2.0/',
+    clientId: '87a1ac50-0ccc-4284-b02f-1d69b3baccf7',
+    scope: "email profile openid https://dicom.healthcareapis.azure.com/Dicom.ReadWrite",
+    grantType: "implicit",
+    endSessionEndpoint: "/logout-redirect.html",
+    loadUserInfo: true
+  },
   disableWorklist: false,
   disableAnnotationTools: false,
   mode: 'light',
