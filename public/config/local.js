@@ -3,20 +3,19 @@ window.config = {
   path: '/',
   servers: [
     {
-      id: 'local',
+      id: 'azure',
       // This must match the proxy location configured for the web server
-      //url: 'http://localhost:8008/dcm4chee-arc/aets/DCM4CHEE/rs',
       url: 'https://sphdicomviewerws-sph-dicom-service.dicom.azurehealthcareapis.com/v1',
-      write: true
+      write: false
     }
   ],
   oidc: {
     authority: 'https://login.microsoftonline.com/e1e6c510-d559-4083-be44-b48d35cf26a9/v2.0/',
-    clientId: '1cb14457-f4f9-4179-8d94-420047dfefb9',
+    clientId: '96beb278-dd40-481b-8f74-adca6a671d7a',
     scope: "email profile openid https://dicom.healthcareapis.azure.com/Dicom.ReadWrite",
     grantType: "implicit",
     endSessionEndpoint: "/logout-redirect.html",
-    loadUserInfo: true
+    loadUserInfo: false
   },
   disableWorklist: false,
   disableAnnotationTools: false,
